@@ -1,6 +1,6 @@
 # RØDECaster Pro Multitrack Splitter
 
-These scripts extract single WAV files from the PolyWAV files recorded by RØDECaster Pro on SD card. The scripts are written for Windows and rely on the [ffmpeg](https://www.ffmpeg.org/) program.
+These scripts extract single WAV files from a PolyWAV file recorded by RØDECaster Pro on SD card. The scripts are written for Windows and rely on the [ffmpeg](https://www.ffmpeg.org/) program.
 
 ## Multitrack Channel Layout
 The RØDECaster records the main stereo sum or all tracks in a WAV file on the SD card.
@@ -71,3 +71,8 @@ SP      12-13   soundpad
 Thanks to all the developers that help to make ffmpeg such a wonderful tool.
 
 A [post](https://video.stackexchange.com/questions/22024/extract-all-audio-channels-as-separate-wave-file-from-a-multichannel-file) from [user3450548](https://video.stackexchange.com/users/11789/user3450548) helped me a lot, as well as hints from Ulli Scuda from Fraunhofer IIS, who sent me some export examples.
+
+# Trademarks
+All trademarks belong to their respective owners and are used for information only. 
+
+This is especially true for RØDECaster(TM) and RØDE(TM), but also for FFMPEG(TM).
