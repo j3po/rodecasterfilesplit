@@ -11,7 +11,7 @@ If you choose the Multitrack recording, all 14 channels are in ONE file, called 
 
 ## General
 
-The batch files (Windows only!) require one parameter and can have an optional parameter.
+The batch files (Windows only!) require one parameter and can have an optional parameter. The script does not check for existance of the inputfile and ALWAYS overwrites the output files without asking for permissions!
 
 The first parameter is the inputfile, which is the rodecaster PolyWAV file. This filename is given to the `ffmpeg` command and processed.
 
@@ -50,9 +50,11 @@ SP      12-13   soundpad
 
 ## rc_split
 
-If you have a simple podcasting setup without additional equipment (smartphone, PC, bluetooth), then you only need the "builtin" sources. Therefore only the following channels are exported.
+If you have a simple podcasting setup without additional equipment (smartphone, PC, bluetooth), then you only need the "builtin" sources.
 
 The command is the same as before: `rc_split.bat <inputfile> <prefix>`
+
+Only the following channels are exported:
 
 ```bash
 ###########################
@@ -70,7 +72,7 @@ SP      12-13   soundpad
 # Acknowledgements
 Thanks to all the developers that help to make ffmpeg such a wonderful tool.
 
-A [post](https://video.stackexchange.com/questions/22024/extract-all-audio-channels-as-separate-wave-file-from-a-multichannel-file) from [user3450548](https://video.stackexchange.com/users/11789/user3450548) helped me a lot, as well as hints from Ulli Scuda from Fraunhofer IIS, who sent me some export examples.
+A [post](https://video.stackexchange.com/questions/22024/extract-all-audio-channels-as-separate-wave-file-from-a-multichannel-file) from [user3450548](https://video.stackexchange.com/users/11789/user3450548) helped me a lot, as well as hints from Ulli Scuda, who sent me some export examples.
 
 # Trademarks
 All trademarks belong to their respective owners and are used for information only. 
