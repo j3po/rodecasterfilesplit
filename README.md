@@ -19,6 +19,8 @@ The optional parameter is a prefix for the output files. If no second parameter 
 
 The output files are written to `.\out\<prefix>_main.wav`, where `main` is the name for the first two channels (it is a stereo file).
 
+The ffmpeg commands within the batch files can be used with Linux and MacOS as well. Just be careful with the paths and variable names and adopt to your needs.
+
 ## Structure
 
 This repository has three subfolder:

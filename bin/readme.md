@@ -7,3 +7,7 @@ Get them at [FFMPEG](https://www.ffmpeg.org) and put them here:
 * `ffprobe.exe` (not necessary, but useful)
 
 Thanks and enjoy!
+
+## Alternative:
+
+Install ffmpeg globally in your Windows system... I don't know, if there is an installer for that and I don't care. :)
