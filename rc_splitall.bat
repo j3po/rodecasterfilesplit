@@ -13,7 +13,7 @@ if "%prefix%"=="" (
 echo Prefix: %prefix%
 
 REM #############################################################
-ffmpeg -y -i %1 -hide_banner -loglevel error -stats -filter_complex ^
+.\bin\ffmpeg -y -i %1 -hide_banner -loglevel error -stats -filter_complex ^
     "[0:a]pan=stereo|c0=c0|c1=c1[main];[0:a]pan=mono|c0=c2[m1];[0:a]pan=mono|c0=c3[m2];[0]pan=mono|c0=c4[m3];[0]pan=mono|c0=c5[m4];[0]pan=stereo|c0=c6|c1=c7[usb];[0]pan=stereo|c0=c8|c1=c9[smart];[0]pan=stereo|c0=c10|c1=c11[blue];[0:a]pan=stereo|c0=c12|c1=c13[sp]" ^
     -map "[main]" %prefix%_main.wav -acodec pcm_s24le ^
     -map "[m1]" %prefix%_mic1.wav -acodec pcm_s24le ^
@@ -33,6 +33,7 @@ REM #############################################################
 echo Usage: splitpart.bat inputfile [prefix]
 echo inputfile has to be a RodecasterPro PolyWAV
 echo [prefix] is optional; used as a prefix for the split WAV files; default: 'split'
+echo [prefix] can also include a path before the actual prefix, like '.\out\split'
 
 REM #############################################################
 :EOF

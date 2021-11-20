@@ -29,6 +29,7 @@ REM #############################################################
 echo Usage: splitpart.bat inputfile [prefix]
 echo inputfile has to be a RodecasterPro PolyWAV
 echo [prefix] is optional; used as a prefix for the split WAV files; default: 'split'
+echo [prefix] can also include a path before the actual prefix, like '.\out\split'
 
 REM #############################################################
 :EOF

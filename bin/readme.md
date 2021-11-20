@@ -9,5 +9,6 @@ Get them at [FFMPEG](https://www.ffmpeg.org) and put them here:
 Thanks and enjoy!
 
 ## Alternative:
-
 Install ffmpeg globally in your Windows system... I don't know, if there is an installer for that and I don't care. :)
+
+Remember to remove the `.\bin\` line in the `.bat` files if you do so!
